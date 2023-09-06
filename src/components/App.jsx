@@ -1,11 +1,18 @@
-import { Card } from "./Profile/Profile";
-import user from '../data/user.json'
+import { Profile } from "./Profile/Profile";
+import user from '../data/profile.user.json'
 
 
-const App = () => {
+export const App = () => {
   return (
 <>
+<Profile
+  username={user.username}
+  tag={user.tag}
+  location={user.location}
+  avatar={user.avatar}
+  stats={user.stats}
+/>
 
-<Card /></>
+</>
   );
 };
