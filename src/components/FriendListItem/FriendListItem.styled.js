@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 export const Item = styled.li`
-  width: 400px;
+  width: 300px;
   height: 100px;
   background-color: #fffcfc;
   display: flex;

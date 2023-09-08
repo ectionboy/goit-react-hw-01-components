@@ -2,7 +2,7 @@ import { styled } from 'styled-components';
 
 export const TransactionTable = styled.table`
   width: 600px;
-  margin: 0 50px;
+  margin: 50px auto;
   border-collapse: collapse;
 `;
 export const Thead = styled.thead``;
