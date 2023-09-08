@@ -1,0 +1,21 @@
+.statistics{
+    width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    background-color:azure;
+}
+.statistics ul{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.statistics li{
+    display: flex;
+    flex-direction: column;
+    min-width: 40px;
+    padding: 15px;
+    background-color: #00d38c;
+}

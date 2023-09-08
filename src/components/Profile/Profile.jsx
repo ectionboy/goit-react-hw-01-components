@@ -1,22 +1,22 @@
-// import css from './Profile.module.css'
+import css from './Profile.module.css'
 
 
 
 export const Profile = (props) => {
     return (
-        <div className="profile">
-  <div className="description">
+        <div className={css.profile}>
+  <div className={css.description}>
     <img
       src={props.avatar}
       alt="User avatar"
-      className="avatar"
+      className={css.img}
     />
-    <p className="name">{props.username}</p>
-    <p className="tag">{props.tag}</p>
-    <p className="location">{props.location}</p>
+    <p className={css.name}>{props.username}</p>
+    <p className={css.tag}>@{props.tag}</p>
+    <p className={css.location}>{props.location}</p>
   </div>
 
-  <ul className="stats">
+  <ul className={css.stats}>
     <li>
       <span className="label">Followers</span>
       <span className="quantity">{props.stats.followers}</span>
