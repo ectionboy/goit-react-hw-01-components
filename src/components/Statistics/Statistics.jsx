@@ -1,21 +1,24 @@
-import css from './Statistics.module.css'
+import PropTypes from 'prop-types';
+import css from './Statistics.module.css';
 
-import { StatLIST } from "components/Stat-list/Stat-list"
-import { StatTITLE } from "components/Stat-title/Stat-title"
+import { StatLIST } from 'components/Stat-list/Stat-list';
+import { StatTITLE } from 'components/Stat-title/Stat-title';
 
+export const Statistics = ({ title, stats }) => {
+  return (
+    <>
+      <section className={css.statistics}>
+        <StatTITLE title={title} stats={stats} />
 
-
-export const Statistics = ({title, stats}) => {
-    return (
-        <>
-        <section className={css.statistics}>
-        <StatTITLE title={title} stats={stats}  />
-        
         <ul className="stat-list">
-            <StatLIST stats={stats} />
+          <StatLIST stats={stats} />
         </ul>
-        </section>
-        </>
-    )
-}
+      </section>
+    </>
+  );
+};
 
+Statistics.prototype = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(PropTypes.object),
+};
